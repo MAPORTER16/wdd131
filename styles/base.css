@@ -41,7 +41,7 @@ span {
     background-color: #F2E8C6;
     display: block;
     padding: 1rem;
-    border: 1px solid rgb (0 0 0 / 10%);
+    border: 1px solid rgba(0 0 0 / 0.1);
     font-size: 2rem;
     text-align: center;
 }
