@@ -4,6 +4,7 @@
 <html lang="en">
 
 <head>
+    <script src="scripts/getdates.js" defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Matthew Porter">
@@ -27,9 +28,10 @@
     </header>
     <main>
         <h1>Matthew Porter</h1>
+        <div class="about-me"></div>
         <section class="card">
-            <heading>About Me</heading>
-            <img src="images/me.jpg">
+            <h2>About Me</h2>
+            <img src="images/me.jpg" alt="me">
             <p>My name is Matthew, I don't like being called Matt.
                 I was born in Sandy, Utah. I served a mission in the Alabama Birmingham mission. I've been married
                 for 3 years now!
@@ -40,26 +42,29 @@
                 I love spending time with my wife Janessa. She makes me smile and laugh everyday without fail.
             </p>
         </section>
-        <section class="card">
-            <heading>Lord of The Rings</heading>
-            <img src="images/lotr.jpg">
-            <p>Lord of the Rings is heavily inspired by christian beliefs.
-                It was written during WW2 and has themes of darkness, war, and hope.
-                Tolkien invented his very own languages for Lord of The Rings! He made the entire elvish language
-                before writting the first book.
-                Though fantasy existed before. The Lord of The rings set the standard for modern fantasy story
-                telling - complete with maps, invented histories,
-                different races, and a deep mythology.
-                Tolkien wrote the three books by hand!
-                Tolkien clarified that Middle-Earth isn't another planet. It's actually our own world, thousands of
-                years in the past, before recorded history.
-            </p>
+        </div>
+        <div class="lotr">
+            <section class="card">
+                <h2>Lord of The Rings</h2>
+                <img src="images/lotr.jpg" alt="lotr">
+                <p>Lord of the Rings is heavily inspired by christian beliefs.
+                    It was written during WW2 and has themes of darkness, war, and hope.
+                    Tolkien invented his very own languages for Lord of The Rings! He made the entire elvish language
+                    before writting the first book.
+                    Though fantasy existed before. The Lord of The rings set the standard for modern fantasy story
+                    telling - complete with maps, invented histories,
+                    different races, and a deep mythology.
+                    Tolkien wrote the three books by hand!
+                    Tolkien clarified that Middle-Earth isn't another planet. It's actually our own world, thousands of
+                    years in the past, before recorded history.
+                </p>
 
-        </section>
+            </section>
+        </div>
     </main>
     <footer>
         <p>
-            <span id="currentyear">©2025 ⚔️Matthew Porter⚔️ UTAH⛰️ </span>
+            <span class="foot" id="currentyear">©2025 ⚔️Matthew Porter⚔️ UTAH⛰️ </span>
         </p>
         <p id="LastModified"></p>
     </footer>

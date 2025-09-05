@@ -1,11 +1,20 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Cinzel', serif;
+    background-color: #F2E8C6;
 }
+
+h2 {
+    background-color: #6b4226;
+    display: block;
+    color: #D4A017
+}
+
 main {
     max-width: 900px;
     margin: 2rem auto;
@@ -14,53 +23,74 @@ main {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
+
 .card img {
 
     max-width: 500px;
     height: auto;
-    display: flex;
+    display: grid;
     margin: 0 auto;
 }
-span{
+
+.about-me {
+    display: grid;
+    justify-content: flex-end;
+}
+
+span {
     background-color: #F2E8C6;
     display: block;
-    padding:1rem;
+    padding: 1rem;
     border: 1px solid rgb (0 0 0 / 10%);
     font-size: 2rem;
     text-align: center;
 }
+
 nav {
     background-color: #4A7C59;
     margin: 0 auto;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    align-items:center;
+    align-items: center;
     padding: 1rem 0;
 }
-nav ul{
+
+nav ul {
     list-style-type: none;
 
 }
-nav a{
+
+nav a {
     display: block;
-    color:#D4A017;
+    color: #D4A017;
     text-align: center;
     padding: 1rem;
     text-decoration: none;
 }
+
 nav a:hover {
     text-decoration: overline;
 }
 
-.active{
-    color:yellow
+.active {
+    color: yellow
 }
+
 @media (min-width: 640px) {
-    nav ul{
+    nav ul {
         display: flex;
     }
-    nav ul li{
+
+    nav ul li {
         flex: 1 0 auto;
     }
+}
+
+.foot {
+    background-color: #4A7C59;
+    color: #D4A017;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%
 }
