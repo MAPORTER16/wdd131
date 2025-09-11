@@ -18,7 +18,16 @@ header {
     padding: 1rem 2rem;
 }
 
-
+h2{
+    background-color: #4A7C59;
+    color:#D4A017;
+    width: 100%;
+    text-align: center;
+    padding: 4rem;
+    margin: 0;
+    font-size: 2rem;
+    border-radius: 8px 8px;
+}
 
 nav {
     display: flex;
