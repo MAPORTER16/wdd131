@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cinzel', serif;
+    background-color: #F2E8C6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #D4A017;
+    background-color: #4A7C59;
+    padding: 1rem 2rem;
+}
+
+
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: #D4A017;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+
+
+}
+
+nav a:hover {
+    text-decoration: underline double;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: white;
+    text-decoration-thickness: 5px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+figure {
+    background: #6b4226;
+    color: #F2E8C6;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    padding: 1rem;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+figcaption {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+#hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+@media (max-width: 700px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #4A7C59;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100px;
+        z-index: 100;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer {
+    background-color: #4A7C59;
+    color: #D4A017;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%
+}
