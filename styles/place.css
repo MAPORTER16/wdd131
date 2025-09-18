@@ -1,0 +1,117 @@
+/* Red: #BA0C2F Blue: #00205B */
+h1 {
+    background-color: #BA0C2F;
+    color: white;
+    border: 10px solid #00205B;
+    border-color: #00205B;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Hero image responsive rules */
+.hero-image {
+    max-width: 100%;
+    overflow: visible;
+    /* allow overlays to extend beyond image bounds */
+}
+
+.hero-image picture,
+.hero-image img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+h2 {
+    background-color: rgba(247, 247, 247, 0.7);
+    color: #BA0C2F;
+
+}
+
+.data {
+    background-color: rgba(186, 12, 47, 0.9);
+    /* slightly transparent red */
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    z-index: 10;
+}
+
+/* Make hero a positioning context for overlays */
+.hero-image {
+    position: relative;
+}
+
+/* Position data on the left side of the hero image */
+.hero-image .data {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    background-color: rgba(186, 12, 47, 0.85);
+    /* slightly lowered opacity */
+    z-index: 2;
+}
+
+/* Weather box bottom-right over the hero */
+.hero-image .Weather {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: rgba(0, 32, 91, 0.85);
+    color: white;
+    padding: 0.6rem 0.8rem;
+    border-radius: 6px;
+    text-align: right;
+    z-index: 2;
+}
+
+/* Ensure the weather SVG icon is visible and scales */
+.hero-image .Weather img {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+}
+
+/* On small screens, make overlays stack and be less intrusive */
+@media (max-width: 480px) {
+
+    .hero-image .data,
+    .hero-image .Weather {
+        position: static;
+        width: auto;
+        margin: 0.5rem;
+    }
+
+    .hero-image .Weather img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+footer {
+    background-color: #BA0C2F;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+
+}
+
+
+
+
+/* Optional: keep a controlled max-height on large screens while maintaining aspect ratio */
+@media (min-width: 1000px) {
+    .hero-image img {
+        max-height: 500px;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
+}
