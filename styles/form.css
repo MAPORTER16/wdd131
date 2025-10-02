@@ -1,0 +1,183 @@
+body {
+    background-color: #999;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+    border-radius: 25px;
+    margin: 0 0 30px 0;
+    padding: 20px;
+    color: white;
+}
+
+/* Form container styling */
+.f1 {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ddd;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Legend/Label styling */
+legend,
+.pn,
+.or,
+.di,
+.feat {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* First section - no top margin */
+.pn {
+    margin-top: 0;
+}
+
+/* Select dropdown styling */
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+/* Radio buttons section */
+.or+section {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+section label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    flex: 1;
+    min-width: 80px;
+    text-align: center;
+}
+
+/* Hide the actual radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Pumpkin emoji ratings */
+label[for="onepumpkin"]::after {
+    content: "🎃";
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+label[for="twopumpkin"]::after {
+    content: "🎃🎃";
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+label[for="threepumpkin"]::after {
+    content: "🎃🎃🎃";
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+label[for="fourpumpkin"]::after {
+    content: "🎃🎃🎃🎃";
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+label[for="fivepumpkin"]::after {
+    content: "🎃🎃🎃🎃🎃";
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+/* Highlight selected pumpkins */
+input[type="radio"]:checked+label::after {
+    filter: brightness(1.3);
+    text-shadow: 0 0 10px orange;
+}
+
+/* Date input styling */
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+/* Checkbox section styling */
+.feat+label {
+    display: block;
+    margin-bottom: 8px;
+    margin-left: 0;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+/* Text areas and inputs */
+textarea,
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Submit button */
+button,
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    border: 2px solid #999;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #e0e0e0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+    padding: 6px;
+    border-radius: 25px;
+    margin-top: 30px;
+}
