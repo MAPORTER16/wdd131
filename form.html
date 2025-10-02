@@ -2,61 +2,69 @@
 <html lang="en">
 
 <head>
-    <script src="../scripts/form.js" defer></script>
+    <script src="scripts/form.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fill Me In">
     <meta name="author" content="Matthew Porter">
-    <link href="../styles/form.css" rel="stylesheet">
-    <title>Form</title>
+    <link href="styles/form.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Product Review</title>
+
 </head>
 
 <body>
     <h1>Product review</h1>
     <form method="get" action="review.html" class="f1">
-        <legend class="pn">Product Name*</legend>
-        <select id="choose" name="product" required>
-            <option value="" disabled selected>Select a Product ...</option>
-            <option value="flux capacitor">flux capacitor</option>
-            <option value="power laces">power laces</option>
-            <option value="time circuits">time circuite</option>
-            <option value="low voltage reactor">low voltage reactor</option>
-            <option value="warp equalizer">warp equalizer</option>
-        </select>
+        <fieldset>
+            <legend class="pn">Product Name*</legend>
+            <select id="choose" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+                <option value="flux capacitor">flux capacitor</option>
+                <option value="power laces">power laces</option>
+                <option value="time circuits">time circuits</option>
+                <option value="low voltage reactor">low voltage reactor</option>
+                <option value="warp equalizer">warp equalizer</option>
+            </select>
+        </fieldset>
 
-
-        <section>
+        <fieldset>
             <legend class="or">Overall Rating</legend>
-            <label> <input type="radio" id="fivepumpkin" name="pumpkins" value="5" required><label
-                    for="fivepumpkin"></label>
-                <label> <input type="radio" id="fourpumpkin" name="pumpkins" value="4" required><label
-                        for="fourpumpkin"></label>
-                    <label> </label> <input type="radio" id="threepumpkin" name="pumpkins" value="3" required><label
-                        for="threepumpkin"></label>
-                    <label> </label><input type="radio" id="twopumpkin" name="pumpkins" value="2" required><label
-                        for="twopumpkin"></label>
-                    <label> </label><input type="radio" id="onepumpkin" name="pumpkins" value="1" required><label
-                        for="onepumpkin"></label>
-        </section>
+            <label for="fivepumpkin"><input type="radio" id="fivepumpkin" name="pumpkins" value="5" required></label>
+            <label for="fourpumpkin"><input type="radio" id="fourpumpkin" name="pumpkins" value="4" required></label>
+            <label for="threepumpkin"><input type="radio" id="threepumpkin" name="pumpkins" value="3" required></label>
+            <label for="twopumpkin"><input type="radio" id="twopumpkin" name="pumpkins" value="2" required></label>
+            <label for="onepumpkin"><input type="radio" id="onepumpkin" name="pumpkins" value="1" required></label>
+        </fieldset>
 
-        <legend class="di">Date of Instalation</legend>
-        <input type="date" id="date-selector" name="ds" required>
+        <fieldset>
+            <legend class="di">Date of Installation</legend>
+            <input type="date" id="date-selector" name="ds" required>
+        </fieldset>
 
-        <legend class="feat">Which features did you find useful in the product?(check all that apply)</legend>
-        <label> <input type="checkbox" id="dur" name="durability" value="yes"> Durability </label>
-        <label> <input type="checkbox" id="ease" name="ease of use" value="yes"> Ease of Use </label>
-        <label> <input type="checkbox" id="per" name="performance" value="yes"> Performance </label>
-        <label> <input type="checkbox" id="des" name="design" value="yes"> Design </label>
+        <fieldset>
+            <legend class="feat">Which features did you find useful in the product?(check all that apply)</legend>
+            <label><input type="checkbox" id="dur" name="durability" value="yes"> Durability</label>
+            <label><input type="checkbox" id="ease" name="ease of use" value="yes"> Ease of Use</label>
+            <label><input type="checkbox" id="per" name="performance" value="yes"> Performance</label>
+            <label><input type="checkbox" id="des" name="design" value="yes"> Design</label>
+        </fieldset>
 
-        <section>
+        <fieldset>
             <legend class="written">Written Review (optional)</legend>
             <textarea id="text" name="area"></textarea>
-            <section>
-                <legend>Your Name (optional)</legend>
-                <input type="text" id="enter" name="name">
+        </fieldset>
 
-                <input type="submit" value="confirm review" name="button">
+        <fieldset>
+            <legend>Your Name (optional)</legend>
+            <input type="text" id="enter" name="name">
+        </fieldset>
 
+        <input type="submit" value="confirm review" name="button">
     </form>
 
 
