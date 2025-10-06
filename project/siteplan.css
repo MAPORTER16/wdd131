@@ -32,12 +32,12 @@ h1 {
 h2 {
     color: var(--primary-dark);
     background-color: var(--primary-color);
-    font-family: 'Cinzel', serif;
+    font-family: 'Cinzel Decorative', serif;
 }
 
 p {
     color: var(--text-color);
-    font-family: 'Raleway', sans-serif;
+    font-family: 'cinzel', serif;
     background-color:var(--primary-dark) ;
 }
 
