@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="scripts/hf.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Matthew Porter" content="author">
+    <link href="style/hf.css" rel="stylesheet">
+
+    <!--This will be the font for titles and headings-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- This will be the font for descriptive text -->
+    <title>appointment form</title>
+
+<body>
+    <!--Title-->
+    <h1>Schedule An Appointment</h1>
+    <!--Title-->
+
+    <!--Links to other pages-->
+    <nav>
+        <a href="hobby_forge.html">Home</a>
+        <p class="moto">⚔️Where Legends Are Born⚔️</p>
+        <a href="paint.html">Paint Tutorials</a>
+    </nav>
+    <!--Links to other pages-->
+
+    <!--Video Background-->
+    <div class="video-background">
+        <video autoplay muted loop playsinline webkit-playsinline preload="auto" id="background-video">
+            <source src="images/ash.mp4" type="video/mp4"> <!--Safari prefers this-->
+            <source src="images/ash.webm" type="video/webm">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!--Appointment Form-->
+    <div class="form-container">
+        <h2 class="form-title">Book Your Session</h2>
+        <form class="appointment-form" action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Schedule Appointment</button>
+        </form>
+    </div>
+    <!--Appointment Form-->
+
+</body>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="scripts/hf.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Matthew Porter" content="author">
+    <link href="style/hf.css" rel="stylesheet">
+
+    <!--This will be the font for titles and headings-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- This will be the font for descriptive text -->
+    <title>The Hobby Forge</title>
+
+<body>
+    <!--Title with Logo-->
+    <header class="site-header">
+        <img src="images/logo.webp" alt="The Hobby Forge Logo" class="site-logo">
+        <h1>The Hobby Forge</h1>
+    </header>
+    <!--Title with Logo-->
+
+    <!--Links to other pages-->
+    <nav>
+        <a href="paint.html">Paint Tutorials</a>
+        <p class="moto">⚔️Where Legends Are Born⚔️</p>
+        <a href="contact.html">Contact Us!</a>
+    </nav>
+    <!--Links to other pages-->
+
+    <!--Video Background-->
+    <div class="video-background">
+        <video autoplay muted loop playsinline webkit-playsinline preload="auto" id="background-video">
+            <source src="images/ash.mp4" type="video/mp4"> <!--Safari prefers this-->
+            <source src="images/ash.webm" type="video/webm">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!--Welcome Section-->
+    <section class="welcome-section">
+        <div class="welcome-content">
+            <h2 class="welcome-title">Enter The Forge</h2>
+            <p class="welcome-text">
+                Welcome to The Hobby Forge! We bridge the gap between you and this wonderful hobby that you're about to
+                embark your journey on. We offer a full service of tutorial videos, and info you need to get started. If
+                you are more of a hands on learner, schedule an appointment with us! We offer a free lesson in painting
+                and learning some of the tabletop games we have here. If you have any questions we'd be happy to answer!
+                We have a dedicated team that is ready and willing to answer your questions and send you tips if you
+                need them! Feel free to explore the forge! Don't miss out on the cool miniatures we've recently finished
+                that you can buy yourself! Enjoy!
+            </p>
+        </div>
+    </section>
+    <!--Welcome Section-->
+
+    <!--Mini Slide Show-->
+    <h3 class="gallery-title">Fresh From The Forge</h3>
+    <div class="gallery-container">
+        <button class="nav-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="gallery">
+            <img src="images/mini-1.webp" alt="mini 1" class="gallery-slide active" loading="lazy">
+            <img src="images/mini-2.webp" alt="mini 2" class="gallery-slide" loading="lazy">
+            <img src="images/mini-3.webp" alt="mini 3" class="gallery-slide" loading="lazy">
+            <img src="images/mini-4.webp" alt="mini 4" class="gallery-slide" loading="lazy">
+            <img src="images/mini-5.webp" alt="mini 5" class="gallery-slide" loading="lazy">
+        </div>
+        <button class="nav-btn next" onclick="changeSlide(1)">&#10095;</button>
+
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+    </div>
+    <!--Mini slide Show-->
+
+    <!--Scheduele Appointment Section-->
+    <div class="scheduel-container">
+        <img src="images/friendly.webp" alt="friendly owner" class="owner-image" loading="lazy">
+        <a href="scheduel.html" class="appointment-overlay">
+            <span class="appointment-text">Schedule an Appointment</span>
+        </a>
+
+
+</body>
+
+
+</html>
