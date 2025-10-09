@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 :root {
     /* Primary Colors */
     --primary-color: #2C2C2C;
@@ -353,10 +358,14 @@ nav a:hover {
     /* Glow effect using your primary-dark color */
 }
 
-
-
-
-
+.owner-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+}
 
 /* Mobile Styles (Default) */
 @media screen and (max-width: 768px) {
@@ -428,6 +437,29 @@ nav a:hover {
         height: 15px;
         width: 15px;
         margin: 0 8px;
+    }
+
+    /* Schedule Container - Mobile Responsive */
+    .scheduel-container {
+        position: static;
+        display: block;
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+        text-align: center;
+        bottom: auto;
+        right: auto;
+    }
+
+    .owner-image {
+        max-width: 250px;
+        margin: 0 auto 15px auto;
+    }
+
+    .appointment-overlay {
+        position: static;
+        display: inline-block;
+        margin-top: 10px;
     }
 
     /* Tablet Styles */
