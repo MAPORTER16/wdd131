@@ -9,12 +9,12 @@ img {
     height: auto;
 }
 
-/* GitHub Pages Compatibility */
+/* GitHub Pages Compatibility - Force smaller, non-overlapping elements */
 @media screen and (max-width: 1200px) {
     .gallery-container {
         position: static !important;
-        width: 90% !important;
-        height: 400px !important;
+        width: 280px !important;
+        height: 350px !important;
         margin: 20px auto !important;
         bottom: auto !important;
         left: auto !important;
@@ -23,9 +23,18 @@ img {
     .scheduel-container {
         position: static !important;
         margin: 20px auto !important;
-        max-width: 90% !important;
+        width: 280px !important;
+        height: 350px !important;
         bottom: auto !important;
         right: auto !important;
+    }
+
+    .gallery-title {
+        position: static !important;
+        text-align: center !important;
+        margin: 20px 0 10px 0 !important;
+        bottom: auto !important;
+        left: auto !important;
     }
 }
 
@@ -241,11 +250,11 @@ nav a:hover {
 /* Slide Show */
 .gallery-title {
     position: absolute;
-    bottom: 730px;
+    bottom: 480px;
     left: 20px;
     color: var(--primary-light);
     font-family: 'Cinzel Decorative', serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     margin: 0;
     z-index: 2;
@@ -255,9 +264,10 @@ nav a:hover {
     position: absolute;
     bottom: 70px;
     left: 20px;
-    width: min(500px, 45vw);
-    height: min(650px, 80vh);
+    width: 300px;
+    height: 400px;
     margin: 0;
+    z-index: 1;
 }
 
 .gallery {
@@ -332,31 +342,32 @@ nav a:hover {
 
 .scheduel-container {
     position: fixed;
-    bottom: 100px;
+    bottom: 70px;
     right: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
     background-color: rgba(23, 22, 22, 0.8);
     /* Semi-transparent background */
     border-radius: 15px;
-    max-width: 600px;
+    width: 300px;
+    height: 400px;
     z-index: 1000;
     /* Ensure it stays on top of other elements */
 }
 
 .appointment-overlay {
-    position: absolute;
-    bottom: 300px;
-    right: 50px;
+    position: static;
     background-color: rgba(26, 26, 26, 0.9);
     color: var(--secondary-light);
-    padding: 15px 25px;
+    padding: 12px 20px;
     border-radius: 8px;
     text-decoration: none;
     transition: all 0.3s ease;
-    border: 2px solid var(--primary-dark)
+    border: 2px solid var(--primary-dark);
+    margin-top: auto;
 }
 
 .appointment-text {
@@ -381,10 +392,12 @@ nav a:hover {
 .owner-image {
     width: 100%;
     height: auto;
-    max-width: 300px;
+    max-width: 250px;
+    max-height: 300px;
     border-radius: 10px;
     object-fit: cover;
     display: block;
+    margin-bottom: 15px;
 }
 
 /* Mobile Styles (Default) */
