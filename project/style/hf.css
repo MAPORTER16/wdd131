@@ -9,6 +9,26 @@ img {
     height: auto;
 }
 
+/* GitHub Pages Compatibility */
+@media screen and (max-width: 1200px) {
+    .gallery-container {
+        position: static !important;
+        width: 90% !important;
+        height: 400px !important;
+        margin: 20px auto !important;
+        bottom: auto !important;
+        left: auto !important;
+    }
+
+    .scheduel-container {
+        position: static !important;
+        margin: 20px auto !important;
+        max-width: 90% !important;
+        bottom: auto !important;
+        right: auto !important;
+    }
+}
+
 :root {
     /* Primary Colors */
     --primary-color: #2C2C2C;
@@ -235,9 +255,9 @@ nav a:hover {
     position: absolute;
     bottom: 70px;
     left: 20px;
-    width: 500px !important;
-    height: 650px !important;
-    margin: 20px auto;
+    width: min(500px, 45vw);
+    height: min(650px, 80vh);
+    margin: 0;
 }
 
 .gallery {
@@ -406,14 +426,17 @@ nav a:hover {
 
     /* Gallery - Move to normal flow, full width */
     .gallery-container {
-        position: static;
+        position: static !important;
         /* Remove absolute positioning*/
-        width: 90%;
-        height: 300px;
+        width: 90% !important;
+        height: 300px !important;
         /* Smaller height for mobile*/
-        margin: 20px auto;
+        margin: 20px auto !important;
         order: 3;
-
+        bottom: auto !important;
+        left: auto !important;
+        max-width: none !important;
+        max-height: none !important;
         /* Control stacking order */
     }
 
